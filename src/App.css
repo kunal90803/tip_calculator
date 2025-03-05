@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+  font-family: 'Space Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  /* background-color: hsl(185, 41%, 84%); */
+}
+
+main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  font-family: 'Space Mono', monospace;
+}
+
+img {
+  width: 5rem;
+  height: 3.75rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.container {
+  width: 50rem;
+  height: fit-content;
+  background: white;
+  display: flex;
+  font-family: 'Space Mono', monospace;
+  border-radius: 1.25rem;
+}
+
+.left p {
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 700;
+  color: hsl(184, 14%, 56%);
+  margin-bottom: 0.75rem;
+}
+
+.left input::placeholder {
+  text-align: right;
+}
+
+.left input {
+  text-align: right;
+  
+  background-repeat: no-repeat;
+  background-position: left 1.125rem center;
+  background-size: 0.75rem;
+  background-color: hsl(189, 41%, 97%);
+
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.3125rem;
+  font-size: 1.625rem;
+  font-family: inherit;
+  border: none;
+  box-sizing: border-box;
+  padding-right: 1.25rem;
+  margin-bottom: 2.1875rem;
+}
+
+.left {
+  font-family: inherit;
+  flex: 1;
+  padding-left: 3.125rem;
+  padding-top: 1.875rem;
+  box-sizing: content-box;
+}
+.left input:nth-of-type(1){
+    background-image: url(./assets/images/icon-dollar.svg);
+}
+.left input:nth-of-type(2){
+    background-image: url(./assets/images/icon-person.svg);
+}
+
+
+
+/* Hide arrows for WebKit browsers (Chrome, Safari, Edge) */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.tipbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.625rem;
+  margin-bottom: 1.5rem;
+}
+
+.tipbox button {
+  height: 2.8rem;
+  font-size: 20px;
+  font-weight: 800;
+  background-color:hsl(183, 100%, 15%) ;
+  color: white;
+}
+#custom{
+    background-image:none;
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+}
+#custom::placeholder{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right {
+    font-family: inherit;
+    flex: 1;
+    padding: 1.875rem;
+    box-sizing: border-box;
+  }

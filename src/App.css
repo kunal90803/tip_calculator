@@ -11,6 +11,7 @@ body {
   /* background-color: hsl(185, 41%, 84%); */
 }
 
+
 main {
   display: flex;
   align-items: center;
@@ -103,15 +104,37 @@ input::-webkit-inner-spin-button {
   font-weight: 800;
   background-color:hsl(183, 100%, 15%) ;
   color: white;
+  border: none; /* Removes border */
+    outline: none; /* Removes outline */
+    transition: background-color 0.3s ease;
+}
+.tipbox button:hover {
+    background-color: rgb(38, 192, 171);
 }
 #custom{
     background-image:none;
     padding: 5px;
     text-align: center;
     margin: 0;
+    border: none; 
+    
+    border-color: transparent;
+    height: 100%;
+
+    font-weight: 800;
+    color: hsl(183, 100%, 15%);
+    
 }
 #custom::placeholder{
     text-align: center;
+    border-color: transparent;
+}
+#custom:focus{
+    border: none; 
+    /* outline: none; */
+}
+button{
+    cursor: pointer;
 }
 
 
@@ -133,3 +156,63 @@ input::-webkit-inner-spin-button {
     padding: 1.875rem;
     box-sizing: border-box;
   }
+  .tip{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+  }
+  .total, .perperson{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .tip{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  .reset{
+    width: 80%;
+    align-self: center;
+    height: 40px;
+    background-color: rgb(13, 104, 109);
+    font-size: larger;
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+  .reset:hover{
+    background-color: rgb(38, 192, 171);
+  }
+  .reset-container {
+    display: flex;
+    justify-content: center; 
+    
+    width: 100%;
+    
+    margin-bottom: 30px;
+}
+.amount{
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+}
+.total div p:nth-of-type(2),.perperson div p:nth-of-type(2) {
+    color: rgb(127, 156, 159); 
+    font-size: 14px; 
+    font-weight: 600;
+}
+.total div p:nth-of-type(1),.perperson div p:nth-of-type(1) {
+    color: white; 
+    font-size: 16px; 
+    font-weight: 600;
+}
+.total div:nth-of-type(2),.perperson div:nth-of-type(2) {
+    color: rgb(38, 192, 171); 
+    font-size: 32px; 
+}
+
+

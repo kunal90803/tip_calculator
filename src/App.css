@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 
 body {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   /* background-color: hsl(185, 41%, 84%); */
 }
-
 
 main {
   display: flex;
@@ -18,7 +17,8 @@ main {
   width: 100%;
   height: 100vh;
   flex-direction: column;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
+  margin-bottom: 100px;
 }
 
 img {
@@ -33,7 +33,7 @@ img {
   height: fit-content;
   background: white;
   display: flex;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   border-radius: 1.25rem;
 }
 
@@ -51,7 +51,7 @@ img {
 
 .left input {
   text-align: right;
-  
+
   background-repeat: no-repeat;
   background-position: left 1.125rem center;
   background-size: 0.75rem;
@@ -67,28 +67,35 @@ img {
   padding-right: 1.25rem;
   margin-bottom: 2.1875rem;
 }
+.inp {
+  border-radius: 5px;
+}
 
 .left {
   font-family: inherit;
   flex: 1;
   padding-left: 3.125rem;
   padding-top: 1.875rem;
-  box-sizing: content-box;
-}
-.left input:nth-of-type(1){
-    background-image: url(./assets/images/icon-dollar.svg);
-}
-.left input:nth-of-type(2){
-    background-image: url(./assets/images/icon-person.svg);
-}
 
-
+  box-sizing: border-box;
+}
+.left input:nth-of-type(1) {
+  background-image: url(./assets/images/icon-dollar.svg);
+}
+.left input:nth-of-type(2) {
+  background-image: url(./assets/images/icon-person.svg);
+}
 
 /* Hide arrows for WebKit browsers (Chrome, Safari, Edge) */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.left input:focus {
+  border: 2px solid rgb(38, 192, 171);
+  outline: none;
 }
 
 .tipbox {
@@ -102,117 +109,130 @@ input::-webkit-inner-spin-button {
   height: 2.8rem;
   font-size: 20px;
   font-weight: 800;
-  background-color:hsl(183, 100%, 15%) ;
+  background-color: hsl(183, 100%, 15%);
   color: white;
-  border: none; /* Removes border */
-    outline: none; /* Removes outline */
-    transition: background-color 0.3s ease;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
 }
 .tipbox button:hover {
-    background-color: rgb(38, 192, 171);
+  background-color: rgb(38, 192, 171);
 }
-#custom{
-    background-image:none;
-    padding: 5px;
-    text-align: center;
-    margin: 0;
-    border: none; 
-    
-    border-color: transparent;
-    height: 100%;
+#custom {
+  background-image: none;
+  padding: 5px;
+  text-align: right;
+  margin: 0;
+  border: none;
 
-    font-weight: 800;
-    color: hsl(183, 100%, 15%);
-    
+  border-color: transparent;
+  height: 100%;
+
+  font-weight: 800;
+  color: hsl(183, 100%, 15%);
 }
-#custom::placeholder{
-    text-align: center;
-    border-color: transparent;
+#custom::placeholder {
+  text-align: center;
+  border-color: transparent;
 }
-#custom:focus{
-    border: none; 
-    /* outline: none; */
+#custom:focus {
+  border: none;
+  /* outline: none; */
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .right {
-    font-family: inherit;
-    flex: 1;
-    padding: 1.875rem;
-    box-sizing: border-box;
-  }
-  .tip{
-    width: 100%;
-    height: 100%;
-    background-color: hsl(183, 100%, 15%);
-    border-radius: 10px;
-  }
-  .total, .perperson{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .tip{
-    
+  font-family: inherit;
+  flex: 1;
+  padding: 1.875rem;
+  box-sizing: border-box;
+}
+.tip {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+}
+.total,
+.perperson {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+  align-items: center;
+  width: 80%;
+}
+.tip {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.reset {
+  width: 80%;
+  align-self: center;
+  height: 40px;
+  background-color: rgb(13, 104, 109);
+  font-size: larger;
+  font-weight: 600;
+  color: rgb(74, 135, 138);
+  transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 5px;
+}
+.reset:hover {
+  background-color: rgb(38, 192, 171);
+}
+.reset-container {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  margin-bottom: 30px;
+}
+.amount {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+}
+.total div p:nth-of-type(2),
+.perperson div p:nth-of-type(2) {
+  color: rgb(127, 156, 159);
+  font-size: 14px;
+  font-weight: 600;
+}
+.total div p:nth-of-type(1),
+.perperson div p:nth-of-type(1) {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.total div:nth-of-type(2),
+.perperson div:nth-of-type(2) {
+  color: rgb(38, 192, 171);
+  font-size: 34px;
+}
+
+@media (max-width: 840px) {
+  .container {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* align-items: center; */
+  }
+  .left {
+    padding: 1rem;
+  }
+  .tipbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem;
+    margin-bottom: 1.5rem;
   }
   .reset{
-    width: 80%;
-    align-self: center;
-    height: 40px;
-    background-color: rgb(13, 104, 109);
-    font-size: larger;
-    transition: background-color 0.3s ease;
-    border: none;
+    margin-top: 1rem;
   }
-  .reset:hover{
-    background-color: rgb(38, 192, 171);
-  }
-  .reset-container {
-    display: flex;
-    justify-content: center; 
-    
-    width: 100%;
-    
-    margin-bottom: 30px;
+  
 }
-.amount{
-    margin-top: 30px;
-    display: grid;
-    gap: 20px;
-}
-.total div p:nth-of-type(2),.perperson div p:nth-of-type(2) {
-    color: rgb(127, 156, 159); 
-    font-size: 14px; 
-    font-weight: 600;
-}
-.total div p:nth-of-type(1),.perperson div p:nth-of-type(1) {
-    color: white; 
-    font-size: 16px; 
-    font-weight: 600;
-}
-.total div:nth-of-type(2),.perperson div:nth-of-type(2) {
-    color: rgb(38, 192, 171); 
-    font-size: 32px; 
-}
-
-

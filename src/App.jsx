@@ -146,7 +146,8 @@ function App() {
                 <div>
                   $
                   {bill > 0 && people > 0
-                    ? ((Number(bill) + Number(tip)) / Number(people)).toFixed(2)
+                    ? ((Number(bill) ) / Number(people) + (Number(bill) * 0.01 * Number(tip)) /
+                    Number(people)).toFixed(2)
                     : "0.00"}
                 </div>
               </div>

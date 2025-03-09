@@ -1,12 +1,34 @@
-# React + Vite
+# Social Profile Links
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌟 Overview
+This is my solution for the **Frontend Mentor - Tip Calculator Web App** challenge. The goal was to build a Tip Calculator page as close to the provided design as possible while ensuring responsiveness and accessibility.
 
-Currently, two official plugins are available:
+## 🚀 Live Preview
+🔗 [Live Demo](https://tip-calculator-xi-seven.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📂 Repository
+🔗 [GitHub Repo](https://github.com/kunal90803/tip_calculator)
 
-## Expanding the ESLint configuration
+## 🎯 What I Learned
+- **Javascript**: I initially faced issues with javascript handling 
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Integrating Design with JS**: Improved my understanding of designing related to JS.
+
+## 🛠 Technologies Used
+- HTML5
+- CSS3
+- Flexbox
+- React
+
+
+
+## 📈 Future Improvements
+- Enhance accessibility by improving contrast and adding `aria-labels`.
+- Use CSS Grid for better layout structuring.
+- Experiment with animations for hover effects.
+
+## 🎉 Conclusion
+This project helped me strengthen my Javascript fundamentals and responsive design skills. Looking forward to taking on more challenges!
+
+---
+✅ Built by [Kunal](https://github.com/kunal90803) 🚀
